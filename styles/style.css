@@ -11,6 +11,123 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--primary-font, -apple-system, sans-serif);
+  font-variation-settings: "wght" var(--primary-content-weight);
 }
+
+.block-style {
+  display: flex;
+  flex-direction: column;
+  width: clamp(var(--block-width-min), var(--block-width-pref), var(--block-width-max));
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.block-style > *:not(h1, h2, .card-image) {
+  margin: 0 25px 25px;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: clamp(327px, 312.56px + 3.85vw, 368px);
+  margin: 100px 0;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.accent-title {
+  font-size: clamp(var(--accent-title-size-min), var(--accent-title-size-pref), var(--accent-title-size-max));
+}
+
+.accent-text {
+  font-size: clamp(var(--accent-text-size-min), var(--accent-text-size-pref), var(--accent-text-size-max));
+}
+
+.card {
+  line-height: 21px;
+}
+
+.card-title {
+  margin: 4px 10px;
+  font-size: 18px;
+  font-variation-settings: "wght" var(--primary-title-weight);
+}
+
+.card-image {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 14px;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow:
+    1px  0   0 var(--srtoke-color),
+   -1px  0   0 var(--srtoke-color),
+    0   1px 0 var(--srtoke-color),
+    0  -1px 0 var(--srtoke-color),
+    1px  1px 0 var(--srtoke-color),
+   -1px  1px 0 var(--srtoke-color),
+    1px -1px 0 var(--srtoke-color),
+   -1px -1px 0 var(--srtoke-color);
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.button__group {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  gap: 7px;
+}
+
+.card__icon-button {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.temp-icon {
+  width: 39px;
+  height: 36px;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  font-size: 14px;
+  font-family: var(--accent-font);
+  background: none;
+}
+
+@supports (-webkit-text-stroke: 1px var(--srtoke-color)) {
+  .image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--srtoke-color);
+  }  
+}
+
+
