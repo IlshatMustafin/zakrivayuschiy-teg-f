@@ -3,7 +3,6 @@
     --primary-font: 'Inter-Variable';
     --primary-title-weight: 715;
     --primary-content-weight: 410;
-
     --accent-font: 'Press Start 2P';
     --accent-title-size-min: 49px;
     --accent-title-size-pref: calc(43.37px + 1.50vw);
@@ -11,19 +10,22 @@
     --accent-text-size-min: 14px;
     --accent-text-size-pref: calc(10.83px + 0.85vw);
     --accent-text-size-max: 27px;
-
     --block-width-min: 375px;
     --block-width-pref: calc(260.56px + 30.52vw);
     --block-width-max: 700px;
-
+    --dialog-width-min: 341px;
+    --dialog-width-pref: calc(336.774648px + 1.126761vw);
+    --dialog-width-max: 353px;
     --button-save-width-min: 306px;
     --button-save-width-pref: calc(295.788732px + 2.723005vw);
     --button-save-width-max: 335px;
-
+    --color-difference: #fff;
+    --color-heart-contour: #000;
+    --animation-fill-color: red;
+    --contour-color: red;
     --background-gradient:
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(0deg,  #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-    
     --srtoke-color: #fff;
 }
