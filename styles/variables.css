@@ -16,6 +16,10 @@
     --block-width-pref: calc(260.56px + 30.52vw);
     --block-width-max: 700px;
 
+    --button-save-width-min: 306px;
+    --button-save-width-pref: calc(295.788732px + 2.723005vw);
+    --button-save-width-max: 335px;
+
     --background-gradient:
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(0deg,  #d3d3d3 0 2px, transparent 2px 4px),
