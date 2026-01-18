@@ -307,7 +307,7 @@
     text-shadow: none;
     -webkit-text-stroke: 1px var(--srtoke-color);
     text-stroke: 1px var(--srtoke-color);
-  }  
+  }
 }
 
 @media (width <= 375px) {
